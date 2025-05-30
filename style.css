@@ -1,0 +1,167 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #fbf5f5;
+}
+
+nav {
+  background-color: #9dd8a8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.user-name {
+  border-bottom: 2px #22452a solid;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav li {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+nav li:hover {
+  color: #e3f5e6;
+  transition: 0.5s;
+}
+
+.title-section {
+  color: #22452a;
+  font-size: 35px;
+}
+
+/* about-section */
+
+.about-section {
+  background-color: rgb(219, 219, 219);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100vh;
+}
+
+.about-section img {
+  width: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.about-section img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.about-section p {
+  width: 600px;
+}
+
+.social-media,
+.skills {
+  color: #2c6938;
+  font-size: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.bi:hover {
+  color: rgb(10, 32, 63);
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.3);
+}
+
+/* project-section */
+
+.project-section {
+  padding: 100px;
+}
+
+.project-section h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 30px;
+  overflow-x: scroll !important;
+}
+
+.card {
+  border-radius: 6px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.card img {
+  width: 300px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.card-body p {
+  text-align: center;
+}
+
+.skil-section {
+  background-color: rgb(227, 227, 227);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+}
+
+footer {
+  background-color: rgb(73, 73, 73);
+  color: rgb(226, 226, 226);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
